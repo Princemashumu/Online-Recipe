@@ -176,7 +176,26 @@ function LandingPage() {
                 </Typography>
               </Box>
               <Box sx={{ marginLeft: 'auto', display: 'flex', flexWrap: 'wrap' }}>
-                {['Home', 'Terms & Conditions'].map((text) => (
+              <Button 
+        onClick={handleOpenRegister} // Open registration dialog on click
+        variant="outlined" 
+                sx={{
+                  color: '#F4A300', 
+                  borderColor: '#F4A300',
+                  fontWeight: 'bold',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem', // Space between text and icon
+                  '&:hover': { borderColor: 'red', color: 'red' },
+                  [theme.breakpoints.down('md')]: {
+                    fontSize: '0.875rem',
+                    padding: '0.5rem 1rem',
+                  },
+        }}
+      >
+        Sign Up
+      </Button>
+                {['Terms & Conditions'].map((text) => (
                   <Button 
                     
                     key={text}
@@ -197,6 +216,7 @@ function LandingPage() {
                     {text}
                   </Button>
                 ))}
+                
               </Box>
             </Toolbar>
           </AppBar>

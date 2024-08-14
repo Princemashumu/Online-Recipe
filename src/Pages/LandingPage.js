@@ -73,7 +73,7 @@ function LandingPage() {
 
   useEffect(() => {
     const fetchRecipes = async () => {
-      const recipeIds = [52771, 52773, 52777, 52775]; // recipe IDs on display
+      const recipeIds = [52772, 52773, 52777, 52775]; // recipe IDs on display
       try {
         const responses = await Promise.all(
           recipeIds.map((id) =>

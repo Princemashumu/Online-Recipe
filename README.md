@@ -1,6 +1,3 @@
-To add icons to your README file, you can use emojis or icon services like [FontAwesome](https://fontawesome.com/) for a cleaner, more visually appealing layout. Here's how you can update your README with icons for different sections:
-
----
 
 # 🍲 Recipe Management Application
 https://online-recipe-vert.vercel.app/

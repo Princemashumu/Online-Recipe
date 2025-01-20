@@ -30,7 +30,7 @@ This is a recipe management application built using ReactJS and JSON Server. It 
 1. **📂 Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/recipe-app.git
+   git clone https://github.com/Princemashumu/Online-Recipe.git
    ```
    ```
    cd recipe-app

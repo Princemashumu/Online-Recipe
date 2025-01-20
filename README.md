@@ -69,8 +69,11 @@ This is a recipe management application built using ReactJS and JSON Server. It 
    ```
 
    The application will be available at https://online-recipe-1.onrender.com/
-## Screenshot 
+# Screenshot 
+## frontend
 ![image](https://github.com/user-attachments/assets/66fb024b-9aaf-4ab7-99e6-14414104bbf4)
+ ## server 
+ ![image](https://github.com/user-attachments/assets/0743d87b-2253-459d-8694-9746e6a6dcad)
 
 ### 📑 Pages
 

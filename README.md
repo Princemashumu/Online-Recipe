@@ -68,7 +68,9 @@ This is a recipe management application built using ReactJS and JSON Server. It 
    npm start
    ```
 
-   The application will be available at [http://localhost:3000](http://localhost:3000).
+   The application will be available at https://online-recipe-1.onrender.com/
+## Screenshot 
+![image](https://github.com/user-attachments/assets/66fb024b-9aaf-4ab7-99e6-14414104bbf4)
 
 ### 📑 Pages
 

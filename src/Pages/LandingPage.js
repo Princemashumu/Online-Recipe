@@ -129,7 +129,7 @@ function LandingPage() {
 
     try {
       if (isRegisterForm) {
-        const response = await axios.post("http://localhost:3001/users", {
+        const response = await axios.post("https://online-recipe-1.onrender.com/users", {
           email,
           username,
           password,
@@ -142,7 +142,7 @@ function LandingPage() {
           handleCloseRegister();
         }
       } else {
-        const response = await axios.get("http://localhost:3001/users", {
+        const response = await axios.get("https://online-recipe-1.onrender.com/users", {
           email,
           password,
         });

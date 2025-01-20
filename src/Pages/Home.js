@@ -113,7 +113,7 @@ function HomePage() {
  useEffect(() => {
   const fetchRecipes = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/recipes');
+      const response = await axios.get('https://online-recipe-1.onrender.com/recipes');
       setRecipes(response.data);
     } catch (error) {
       console.error('Error fetching recipes:', error);
@@ -196,10 +196,10 @@ const handleInputChange = (e) => {
 };
 const handleUpdateRecipe = async () => {
   try {
-    await axios.put(`http://localhost:3001/recipes/${editRecipe.id}`, editRecipe);
+    await axios.put(`https://online-recipe-1.onrender.com/${editRecipe.id}`, editRecipe);
 
     // Fetch the updated list of recipes
-    const response = await axios.get('http://localhost:3001/recipes');
+    const response = await axios.get('https://online-recipe-1.onrender.com/recipes');
     setRecipes(response.data);
 
     handleCloseEditRecipeModal();
@@ -211,10 +211,10 @@ const handleUpdateRecipe = async () => {
 const handleAddRecipe = async () => {
   try {
     // Add the new recipe to the JSON server
-    await axios.post('http://localhost:3001/recipes', newRecipe);
+    await axios.post('https://online-recipe-1.onrender.com/recipes', newRecipe);
     
     // Fetch the updated list of recipes
-    const response = await axios.get('http://localhost:3001/recipes');
+    const response = await axios.get('https://online-recipe-1.onrender.com/recipes');
     setRecipes(response.data);
     
     // Close the modal and reset the form
@@ -247,13 +247,13 @@ const handleEditRecipe = async () => {
     };
 
     // Send update request
-    const response = await axios.put(`http://localhost:3001/recipes/${updatedRecipe.id}`, updatedRecipe);
+    const response = await axios.put(`https://online-recipe-1.onrender.com/recipes/${updatedRecipe.id}`, updatedRecipe);
 
     // Check response status
     if (response.status === 200) {
       console.log('Recipe updated successfully');
       // Fetch the updated list of recipes
-      const updatedRecipesResponse = await axios.get('http://localhost:3001/recipes');
+      const updatedRecipesResponse = await axios.get('https://online-recipe-1.onrender.com/recipes');
       setRecipes(updatedRecipesResponse.data);
 
       // Close the dialog/modal
@@ -270,10 +270,10 @@ const handleEditRecipe = async () => {
 
 const handleDeleteRecipe = async (id) => {
   try {
-    await axios.delete(`http://localhost:3001/recipes/${id}`);
+    await axios.delete(`https://online-recipe-1.onrender.com/recipes/${id}`);
 
     // Fetch the updated list of recipes
-    const response = await axios.get('http://localhost:3001/recipes');
+    const response = await axios.get('https://online-recipe-1.onrender.com/recipes');
     setRecipes(response.data);
   } catch (error) {
     console.error('Error deleting recipe:', error);

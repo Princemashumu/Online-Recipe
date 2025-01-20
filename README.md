@@ -1,6 +1,7 @@
 
 # 🍲 Recipe Management Application
-https://online-recipe-vert.vercel.app/
+## Frontend: https://online-recipe-vert.vercel.app/
+## Backend: https://online-recipe-1.onrender.com
 ## 📖 Overview
 
 This is a recipe management application built using ReactJS and JSON Server. It allows users to store, manage, and refer to their favorite dishes as recipes. Users can create, read, update, and delete recipes, as well as search through their recipe collection.

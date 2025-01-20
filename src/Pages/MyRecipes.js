@@ -83,7 +83,7 @@ function MyRecipes() {
   const [currentEditIndex, setCurrentEditIndex] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/recipes')
+    axios.get('https://online-recipe-1.onrender.com/recipes')
       .then(response => setRecipes(response.data))
       .catch(error => console.error('Error fetching recipes:', error));
   }, []);
@@ -122,7 +122,7 @@ function MyRecipes() {
     formData.append('cookTime', recipeData.cookTime);
     formData.append('servings', recipeData.servings);
 
-    axios.post('http://localhost:3001/recipes', formData)
+    axios.post('https://online-recipe-1.onrender.com/recipes', formData)
       .then(response => {
         setRecipes([...recipes, response.data]);
         setRecipeData({
@@ -144,7 +144,7 @@ function MyRecipes() {
     if (!validateFields()) return;
 
     const updatedRecipe = { ...recipeData };
-    axios.put(`http://localhost:3001/recipes/${recipes[currentEditIndex].id}`, updatedRecipe)
+    axios.put(`https://online-recipe-1.onrender.com/recipes/${recipes[currentEditIndex].id}`, updatedRecipe)
       .then(response => {
         const updatedRecipes = recipes.map((recipe, index) => 
           index === currentEditIndex ? response.data : recipe
@@ -167,7 +167,7 @@ function MyRecipes() {
   };
 
   const handleDeleteRecipe = (index) => {
-    axios.delete(`http://localhost:3001/recipes/${recipes[index].id}`)
+    axios.delete(`https://online-recipe-1.onrender.com/recipes/${recipes[index].id}`)
       .then(() => {
         const updatedRecipes = recipes.filter((_, i) => i !== index);
         setRecipes(updatedRecipes);
